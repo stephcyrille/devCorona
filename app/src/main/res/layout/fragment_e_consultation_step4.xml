@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.econsultation.step4.EConsultationStep4Fragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:text="@string/more_info2"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingTop="8dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/travel_info2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/travel_info2"
+            android:textAlignment="center"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dip"
+            android:paddingTop="8dip"
+            android:paddingRight="5dip"
+            android:paddingBottom="8dip">
+            <CheckBox
+                android:id="@+id/chekcbox_other_travel_info1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/chekcbox_other_travel_info1"
+                android:text="@string/yes" />
+
+            <CheckBox
+                android:id="@+id/chekcbox_other_travel_info2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/chekcbox_other_travel_info2"
+                android:text="@string/no"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/country_select_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/country_select"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:id="@+id/spinner_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/e_consultation_end_button"
+            style="@style/EditTextField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_corona_rounded"
+            android:text="@string/end"
+            android:textColor="@color/colorWhite"
+            android:focusableInTouchMode="false"/>
+
+    </LinearLayout>
+
+</LinearLayout>

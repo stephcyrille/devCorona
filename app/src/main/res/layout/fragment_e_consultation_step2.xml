@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".ui.econsultation.step2.EConsultationStep2Fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:text="@string/symptom_title"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:paddingLeft="5dip"
+                android:paddingTop="8dip"
+                android:paddingRight="5dip"
+                android:paddingBottom="8dip">
+
+                <TextView
+                    android:id="@+id/fever"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/fever"
+                    android:textSize="15sp" />
+
+
+                <CheckBox
+                    android:id="@+id/chekcbox_fever"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:paddingLeft="5dip"
+                android:paddingTop="8dip"
+                android:paddingRight="5dip"
+                android:paddingBottom="8dip">
+
+                <TextView
+                    android:id="@+id/nasal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/nasal"
+                    android:textSize="15sp" />
+
+
+                <CheckBox
+                    android:id="@+id/chekcbox_nasal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:paddingLeft="5dip"
+                android:paddingTop="8dip"
+                android:paddingRight="5dip"
+                android:paddingBottom="8dip">
+
+                <TextView
+                    android:id="@+id/breath_dificulty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/breath_dificulty"
+                    android:textSize="15sp" />
+
+
+                <CheckBox
+                    android:id="@+id/chekcbox_breath_dificulty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:paddingLeft="5dip"
+                android:paddingTop="8dip"
+                android:paddingRight="5dip"
+                android:paddingBottom="8dip">
+
+                <TextView
+                    android:id="@+id/frozen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/frozen"
+                    android:textSize="15sp" />
+
+
+                <CheckBox
+                    android:id="@+id/chekcbox_frozen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:paddingLeft="5dip"
+                android:paddingTop="8dip"
+                android:paddingRight="5dip"
+                android:paddingBottom="8dip">
+
+                <TextView
+                    android:id="@+id/diareah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/diareah"
+                    android:textSize="15sp" />
+
+
+                <CheckBox
+                    android:id="@+id/chekcbox_diareah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:paddingLeft="5dip"
+                android:paddingTop="8dip"
+                android:paddingRight="5dip"
+                android:paddingBottom="8dip">
+
+                <TextView
+                    android:id="@+id/headache"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/headache"
+                    android:textSize="15sp" />
+
+
+                <CheckBox
+                    android:id="@+id/chekcbox_headache"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/e_consultation_step2_btn_next"
+                style="@style/EditTextField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_corona_rounded"
+                android:text="@string/next"
+                android:textColor="@color/colorWhite"
+                android:focusableInTouchMode="false"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

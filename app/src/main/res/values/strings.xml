@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Corona Dev</string>
+    <string name="logo_text">Logo texte Dev Corona</string>
+    <string name="logo_vert">Logo dev Corona</string>
+    <string name="menu_info">Actualité</string>
+    <string name="menu_evolution">Evolution de la pandémie</string>
+    <string name="menu_symptome">Symptomes</string>
+    <string name="menu_form">Consultation</string>
+    <string name="menu_alert">Signaler un malade</string>
+    <string name="menu_follow">Prise en charge</string>
+    <string name="menu_home">Actualité</string>
+    <string name="consulting_step1_title">Information du patient</string>
+    <string name="consulting_step2_title">Mes symptomes</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="symptom_title">Mes symptomes</string>
+    <string name="fever">Fièvre</string>
+    <string name="nasal">Ecoulement nasal</string>
+    <string name="breath_dificulty">Difficulté respiratoire</string>
+    <string name="frozen">Frissons</string>
+    <string name="diareah">Diarrhée</string>
+    <string name="headache">Maux de tete</string>
+    <string name="background_image_description">Background news image</string>
+    <string name="more_info1">Plus d\'information (1/2)</string>
+    <string name="more_info2">Plus d\'information (2/2)</string>
+    <string name="travel_info1">Avez vous éffectuer un déplacement à l\'étranger ces 14 derniers jours ?</string>
+    <string name="travel_info2">Avez vous été en contact ces derniers jours avec un individu provénant de l\'étranger ?</string>
+    <string name="country_select">Si \"OUI\", quel pays ?</string>
+    <string name="no">Non</string>
+    <string name="yes">Oui</string>
+    <string name="next">Suivant</string>
+    <string name="end">Terminer</string>
+    <string name="text_view_e_consultation_end">Vos informations ont été enregistrés avec succès, vos résultats vous seront transmis dans les plus brefs delais</string>
+    <string name="back_home">Revenir à l\'acceuil</string>
+    <string name="consultation_title_more_1">Plus d\'informations (1/2)</string>
+    <string name="consultation_title_more_2">Plus d\'informations (2/2)</string>
+    <string name="consultation_title_end">Terminé</string>
+
+</resources>
+

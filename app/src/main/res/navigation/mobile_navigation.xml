@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.fgihub.steph.coronadev.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home"/>
+
+    <fragment
+        android:id="@+id/nav_evolution"
+        android:name="com.fgihub.steph.coronadev.ui.evolution.MapEvolutionFragment"
+        android:label="@string/menu_evolution"
+        tools:layout="@layout/fragment_map_evolution" />
+
+    <fragment
+        android:id="@+id/nav_symptom"
+        android:name="com.fgihub.steph.coronadev.ui.symptom.SymptomFragment"
+        android:label="@string/menu_symptome"
+        tools:layout="@layout/fragment_symptom" />
+
+    <fragment
+        android:id="@+id/nav_consultation"
+        android:name="com.fgihub.steph.coronadev.ui.econsultation.step1.EConsultationStep1Fragment"
+        android:label="@string/consulting_step1_title"
+        tools:layout="@layout/fragment_e_consultation_step1">
+        <action
+            android:id="@+id/action_nav_consultation_to_EConsultationStep2Fragment2"
+            app:destination="@id/EConsultationStep2Fragment2"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_close_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/EConsultationStep2Fragment2"
+        android:name="com.fgihub.steph.coronadev.ui.econsultation.step2.EConsultationStep2Fragment"
+        android:label="@string/consulting_step2_title"
+        tools:layout="@layout/fragment_e_consultation_step2" >
+        <action
+            android:id="@+id/action_EConsultationStep2Fragment2_to_EConsultationStep3Fragment"
+            app:destination="@id/EConsultationStep3Fragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_close_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/EConsultationStep3Fragment"
+        android:name="com.fgihub.steph.coronadev.ui.econsultation.step3.EConsultationStep3Fragment"
+        android:label="@string/consultation_title_more_1"
+        tools:layout="@layout/fragment_e_consultation_step3" >
+        <action
+            android:id="@+id/action_consultation_step3_to_step4"
+            app:destination="@id/EConsultationStep4Fragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_close_exit"  />
+    </fragment>
+    <fragment
+        android:id="@+id/EConsultationStep4Fragment"
+        android:name="com.fgihub.steph.coronadev.ui.econsultation.step4.EConsultationStep4Fragment"
+        android:label="@string/consultation_title_more_2"
+        tools:layout="@layout/fragment_e_consultation_step4" >
+        <action
+            android:id="@+id/action_consultation_step4_to_end"
+            app:destination="@id/EConsultationEndFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_close_exit"  />
+    </fragment>
+    <fragment
+        android:id="@+id/EConsultationEndFragment"
+        android:name="com.fgihub.steph.coronadev.ui.econsultation.EConsultationEndFragment"
+        android:label="@string/consultation_title_end"
+        tools:layout="@layout/fragment_e_consultation_end" >
+        <action
+            android:id="@+id/action_consultation_end_to_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+
+    <!--
+
+    <fragment
+        android:id="@+id/nav_forms"
+        android:name="com.fgihub.stopcoronacmr.ui.econsultation.EConsultationFragment"
+        android:label="@string/menu_form"
+        tools:layout="@layout/fragment_e_consultation" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_notification"
+        android:name="com.fgihub.stopcoronacmr.ui.signal_alert.SignalAlertFragment"
+        android:label="@string/menu_alert"
+        tools:layout="@layout/fragment_signal_alert" />
+
+    <fragment
+        android:id="@+id/nav_follow"
+        android:name="com.fgihub.stopcoronacmr.ui.follow.FollowFragment"
+        android:label="@string/menu_follow"
+        tools:layout="@layout/fragment_follow" />
+
+    <fragment
+        android:id="@+id/nav_consult_step2"
+        android:name="com.fgihub.stopcoronacmr.ui.econsultation.EConsultStep2Fragment"
+        android:label="@string/menu_consul_step2"
+        tools:layout="@layout/fragment_e_consult_step2" />-->
+</navigation>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_chrome_reader_mode_black_24dp"
+            android:title="@string/menu_info" />
+        <item
+            android:id="@+id/nav_evolution"
+            android:icon="@drawable/ic_show_chart_black_24dp"
+            android:title="@string/menu_evolution" />
+        <item
+            android:id="@+id/nav_symptom"
+            android:icon="@drawable/ic_sentiment_very_dissatisfied_black_24dp"
+            android:title="@string/menu_symptome" />
+    </group>
+
+    <group android:id="@+id/menu_bottom"
+        android:checkableBehavior="single">
+        <item android:id="@+id/nav_consultation"
+            android:icon="@drawable/ic_content_paste_black_24dp"
+            android:title="@string/menu_form"/>
+        <item android:id="@+id/nav_notification"
+            android:icon="@drawable/ic_add_alert_black_24dp"
+            android:title="@string/menu_alert"/>
+        <item android:id="@+id/nav_follow"
+            android:icon="@drawable/ic_accessible_black_24dp"
+            android:title="@string/menu_follow"/>
+    </group>
+
+</menu>
